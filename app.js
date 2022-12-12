@@ -77,7 +77,7 @@ const ItemCtrl = (function(){
         document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit);
     }
 
-    // Add item submit
+     // Add item submit
   const itemAddSubmit = function(e){
     // Get form input from UI Controller
     const input = UICtrl.getItemInput();
@@ -90,23 +90,22 @@ const ItemCtrl = (function(){
 
     e.preventDefault();
   }
-  
-    // Public methods
-    return {
-      init: function(){
-        // Fetch items from data structure
-        const items = ItemCtrl.getItems();
-  
-        // Populate list with items
-        UICtrl.populateItemList(items);
 
-        // Load event listeners
-        loadEventListeners();
+  // Public methods
+  return {
+    init: function(){
+      // Fetch items from data structure
+      const items = ItemCtrl.getItems();
 
-      }
+      // Populate list with items
+      UICtrl.populateItemList(items);
+
+      // Load event listeners
+      loadEventListeners();
     }
-    
-  })(ItemCtrl, UICtrl);
+  }
   
-  // Initialize App
-  App.init();
+})(ItemCtrl, UICtrl);
+
+// Initialize App
+App.init();
