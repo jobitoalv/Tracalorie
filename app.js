@@ -155,7 +155,9 @@ const ItemCtrl = (function(){
   
       // Add item event
       document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit);
-    }
+
+      // Edit icon click event
+      document.querySelector(UISelectors.itemList).addEventListener('click', itemUpdateSubmit);
   
     // Add item submit
     const itemAddSubmit = function(e){
@@ -181,13 +183,19 @@ const ItemCtrl = (function(){
   
       e.preventDefault();
     }
+
+    // Update item submit
+    const itemUpdateSubmit = function(e){
+        
+        e.preventDefault();
+    },
   
     // Public methods
     return {
       init: function(){
         // Clear edit state / set initial set
         UICtrl.clearEditState();
-        
+
         // Fetch items from data structure
         const items = ItemCtrl.getItems();
   
