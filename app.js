@@ -92,8 +92,15 @@ const ItemCtrl = (function(){
         const li = document.childElement('li');
         //Add class
         li.ClassName = 'collection-item';
-        //ADD ID
+        //Add ID
         li.id = `item-${item.id}`;
+        //Add HTML
+        li.innerHTML = `<strong>${item.name}: </strong> <em>${item.calories} Calories</em>
+        <a href="#" class="secondary-content">
+          <i class="edit-item fa fa-pencil"></i>
+        </a>`;
+        //Insert item 
+        document.querySelector(UISelectors.itemList).insertAdjacentElement('beforeend', li)
       },
       getSelectors: function(){
         return UISelectors;
