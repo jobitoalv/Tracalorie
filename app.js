@@ -8,9 +8,21 @@ const ItemCtrl = (function(){
         this.calories = calories;
     }
 
+// Data Structure / State
     const data = {
-        item: [],
-        currentItem: null
+        item: [
+            {id: 0,
+             name: 'Steak Dinner',
+             calories: 1200},
+            {id: 1,
+             name: 'Cookies',
+             calories: 400},
+            {id: 2,
+             name: 'Eggs',
+             calories: 300}
+        ],
+        currentItem: null,
+        totalCalories: 0
     }
 })();
 
