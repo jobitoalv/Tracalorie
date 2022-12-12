@@ -185,6 +185,9 @@ const ItemCtrl = (function(){
     // Public methods
     return {
       init: function(){
+        // Clear edit state / set initial set
+        UICtrl.clearEditState();
+        
         // Fetch items from data structure
         const items = ItemCtrl.getItems();
   
