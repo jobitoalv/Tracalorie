@@ -37,7 +37,8 @@ const ItemCtrl = (function(){
   // UI Controller
   const UICtrl = (function(){
     const UISelectors = {
-      itemList: '#item-list'
+      itemList: '#item-list',
+      addBtn: '.add-btn'
     }
     
     // Public methods
@@ -58,7 +59,7 @@ const ItemCtrl = (function(){
         document.querySelector(UISelectors.itemList).innerHTML = html;
       },
       getSelectors: function(){
-          return UISelectors
+          return UISelectors;
       }
     }
   })();
@@ -69,7 +70,11 @@ const ItemCtrl = (function(){
   const App = (function(ItemCtrl, UICtrl){
     //load evert listeners
     const loadEventListeners = function(){
+        //Get UI Selectors
+        const UISelectors = UICtrl.getSelectors();
 
+        //Add Item Event
+        document.querySelector()
     }
   
     // Public methods
