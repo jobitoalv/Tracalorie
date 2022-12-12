@@ -99,6 +99,10 @@ const ItemCtrl = (function(){
   
         // Populate list with items
         UICtrl.populateItemList(items);
+
+        // Load event listeners
+        loadEventListeners();
+
       }
     }
     
