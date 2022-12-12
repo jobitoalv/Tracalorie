@@ -86,6 +86,15 @@ const ItemCtrl = (function(){
           calories:document.querySelector(UISelectors.itemCaloriesInput).value
         }
       },
+
+      addListItem:function(item){
+        //create li element
+        const li = document.childElement('li');
+        //Add class
+        li.ClassName = 'collection-item';
+        //ADD ID
+        li.id = `item-${item.id}`;
+      },
       getSelectors: function(){
         return UISelectors;
       }
@@ -114,6 +123,8 @@ const ItemCtrl = (function(){
       if(input.name !== '' && input.calories !== ''){
         // Add item
         const newItem = ItemCtrl.addItem(input.name, input.calories);
+        // Add item to UI list
+        UICtrl.addListItem(newItem);
       }
   
       e.preventDefault();
