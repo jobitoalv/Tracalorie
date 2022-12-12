@@ -36,7 +36,9 @@ const ItemCtrl = (function(){
   
   // UI Controller
   const UICtrl = (function(){
-    
+    const UISelectors = {
+        itemList: '#item-list'
+    }
     // Public methods
     return {
         populateItemList: function(items){
