@@ -74,7 +74,7 @@ const ItemCtrl = (function(){
         const UISelectors = UICtrl.getSelectors();
 
         //Add Item Event
-        document.querySelector()
+        document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit);
     }
   
     // Public methods
