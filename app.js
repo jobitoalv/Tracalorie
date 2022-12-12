@@ -7,6 +7,11 @@ const ItemCtrl = (function(){
         this.name = name;
         this.calories = calories;
     }
+
+    const data = {
+        item: [],
+        currentItem: null
+    }
 })();
 
 //UI Controller
