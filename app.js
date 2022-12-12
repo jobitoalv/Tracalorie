@@ -64,6 +64,10 @@ const ItemCtrl = (function(){
   
   // App Controller
   const App = (function(ItemCtrl, UICtrl){
+    //load evert listeners
+    const loadEventListeners = function(){
+        
+    }
   
     // Public methods
     return {
