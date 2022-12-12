@@ -73,9 +73,11 @@ const ItemCtrl = (function(){
     const UISelectors = {
       itemList: '#item-list',
       addBtn: '.add-btn',
+      updateBtn: '.update-btn',
+      deleteBtn: '.delete-btn',
       itemNameInput: '#item-name',
       itemCaloriesInput: '#item-calories',
-      totalCalories: '.total-calories'
+      totalCalories: '.total-calories',
     }
     
     // Public methods
