@@ -46,6 +46,9 @@ const ItemCtrl = (function(){
   
         return newItem;
       },
+      getToalCalories: function(){
+        
+      },
       logData: function(){
         return data;
       }
@@ -141,6 +144,9 @@ const ItemCtrl = (function(){
   
         // Add item to UI list
         UICtrl.addListItem(newItem);
+
+        // Get total calories
+        const totalCalories = ItemCtrl.getToalCalories();
   
         // Clear fields
         UICtrl.clearInput();
